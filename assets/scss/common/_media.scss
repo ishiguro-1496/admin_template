@@ -1,0 +1,213 @@
+@media screen and (max-width: 760px){
+    #header_left{
+
+    }
+
+    #header_center{
+
+    }
+
+    #header_right{
+      a{
+         font-size: 6px;
+         p{
+          display: none;
+         }
+         span{
+          margin-right: 0px;
+         }
+      }
+      // img{
+      //   width: 24px;
+      //   height: auto;
+      // }
+    } 
+    #profile{
+        display: none;
+      }
+    #profile_icon{
+      display: block;
+      }   
+
+
+    
+
+
+
+    #main{
+        flex-basis: 96%;
+        margin-left: 2%;
+
+    }
+
+
+
+    #sp_menu{
+        flex-basis: 20%;
+        display: block;
+    }
+
+    #main_contents{
+        flex-direction: column;
+    }
+
+    #dashboard_box{
+
+    }
+
+
+  // 一覧ページ
+
+
+    .flex-table{
+      width: 100%;
+      thead{
+        display: none;
+      }
+
+      tbody{
+        width: 100%;
+        tr{
+          display: block;
+          padding:16px 0px;
+
+          td{
+              padding:0px ;
+              width: 100%; 
+              position:relative;
+              justify-content: start;
+              &::before{
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                margin-right: 20px;
+                width: 20%;
+                background-color:$purple;
+                color:$white;
+                padding: 14px 20px;  
+                flex-shrink: 0;            
+              }
+              img{
+                  width: 60px;
+                  height:auto;
+                } 
+          }
+        }
+
+      }
+    }
+
+
+    #search_block{
+      form{
+        display: block;
+      }
+    }
+
+    #search_box{
+      width: 100%;
+    }
+
+    #search_text{
+      margin:10px 0px 0px 0px;
+      // width: 80%;
+    }
+
+
+    // 入力ページ
+
+    .form-group{
+        display: block;
+        label{
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+        div{
+          span{
+              right: -60px;
+              top:10px;
+          }
+        }
+    }
+    .control-label{
+      color:$purple;
+    }
+
+    #form-inline{
+    display: block;
+    }
+
+    .col-md-1 {
+        width: 60%;
+    }
+
+    .col-md-2 {
+        width: 60%;
+    }
+
+    .col-md-3 {
+        width: 90%;
+    }
+
+    .col-md-4 {
+        width: 90%;
+    }
+
+    .col-md-5 {
+        width: 90%;
+    }
+
+    .col-md-6 {
+        width: 90%;
+    }
+
+    .col-md-7 {
+        width: 90%;
+    }
+
+    .col-md-8 {
+        width: 90%;
+    }
+
+    .col-md-9 {
+        width: 90%;
+    }
+
+    .col-md-10 {
+        width: 100%;
+    }
+
+
+    /*ヘッダー*/
+    .l-header {
+      background: pink;
+      width: 100%;
+      height: 60px;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+
+    #reservation_list{
+        display: block;
+        div{
+            margin: 20px 0px;
+        }
+    }
+
+
+    #sidebar{
+      display: block;
+
+    }
+
+    .tab_item {
+      width: calc(100%/3);
+    }
+
+
+    #login_box{
+      width: 90%;
+    }
+}

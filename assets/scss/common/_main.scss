@@ -1,0 +1,732 @@
+body{
+    // background-color:$lightgray;
+}
+
+
+#main{
+    flex-basis: 96%;
+	margin:0% 2%;
+
+
+}
+
+#page_title{
+	width: 100%;
+	margin: 18px 0px;
+	font-weight: bold;
+    font-size: 20px;
+}
+
+#main_contents{
+	margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+// ダッシュボード
+
+#dashboard_box{
+	margin: 2%;
+    padding: 1% 2%;
+    flex-basis: 30%;
+    // height: auto;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px 2px rgba(225, 225, 225, 0.7);
+    border-radius: 10px;
+    &:hover{
+        box-shadow: 0px 2px 10px 6px rgba(225, 225, 225, 0.7);
+    }
+    a{
+        text-decoration: none;
+        color:$black;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            padding:12px 0px;
+
+        }
+
+    }
+}
+
+#dashboard_title{
+    border-bottom:dashed $gray 1px;
+    svg{
+        fill:$purple;
+        width: 18px;
+        height:auto;
+        padding:6px;
+        border-radius:50%;
+        box-shadow: 0px 8px 10px rgba(225, 225, 225, 0.7);
+    }
+}
+
+#dashboard_contents{
+    span{
+        font-size: 14px;
+
+    }
+    p{
+        color:$magenta;
+        font-size:32px;
+
+    }
+}
+
+
+
+
+// 一覧ページ
+
+.flex-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    font-size:14px;
+    thead {
+        padding-bottom:4px;
+        // border-bottom:2px solid $gray;
+        font-weight: bold;
+        // color:$gray;
+        tr{
+            width:100%;
+            display: flex;
+            align-items:center;
+            // padding:8px;
+
+            th{
+                font-size: 12px;
+                align-items:center;
+                justify-content: left;
+                display: flex;
+                padding: .7em;
+            }
+        }
+    }
+    tbody{
+        tr{
+            width:100%;
+            display: flex;
+            align-items:center;
+            // padding:12px 8px;
+            margin-bottom:32px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            // box-shadow: 0px 2px 10px 2px rgba(225, 225, 225, 0.7);
+            +tr{
+            // border-top: 1px dashed $gray;
+            }
+            td{
+                overflow: hidden;
+                flex-grow: 1;
+                font-size: 12px;
+                display: flex;
+                padding: 0.7em;
+                align-items:center;
+                justify-content: space-between;
+                p{
+                    width: 64px;
+                    margin-right:1.4em;
+                    overflow: hidden;
+                }
+                img{
+                    width: 90%;
+                    height: auto;
+                }
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+}
+
+#btn_block{
+    margin:20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    button{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        margin-right: 16px;
+    }
+    svg{
+        margin-right:4px;
+    }
+}
+
+.table_5{
+    flex-basis:5%;
+}
+
+.table_8{
+    flex-basis:8%;
+}
+
+.table_9{
+    flex-basis:9%;
+}
+
+.table_10{
+    flex-basis:10%;
+}
+
+.table_15{
+    flex-basis:15%;
+}
+
+.table_20{
+    flex-basis:20%;
+}
+
+.table_25{
+    flex-basis:25%;
+}
+
+.table_30{
+    flex-basis:30%;
+}
+
+.table_35{
+    flex-basis:35%;
+}
+
+.table_40{
+    flex-basis:40%;
+}
+.table_50{
+    flex-basis:50%;
+}
+
+.table_60{
+    flex-basis:60%;
+}
+
+.table_70{
+    flex-basis:70%;
+}
+
+.table_80{
+    flex-basis:80%;
+}
+
+.table_90{
+    flex-basis:90%;
+}
+
+
+
+#success_alert{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: $lightgreen;
+    border:1px solid #c4ebd1;
+    border-radius: .25rem;
+    p{
+        margin:1rem 0;
+        padding: .1rem 0.75rem;
+        color:$midgreen;
+        font-size: 14px;
+    }
+    span{
+          margin-right: 20px;
+          display: inline-block;
+          vertical-align: middle;
+          color: $midgreen;
+          line-height: 1;
+          width: 1em;
+          height: 0.1em;
+          background: currentColor;
+          border-radius: 0.1em;
+          position: relative;
+          transform: rotate(45deg);
+    }
+    span::before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: inherit;
+          border-radius: inherit;
+          transform: rotate(90deg);
+    }
+}
+
+.list_status{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding:6px 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#status_green{
+    color:$green;
+    background-color:$lightgreen;
+}
+
+#status_red{
+    color:$red;
+    background-color:$lightred;
+}
+
+#status_yellow{
+    color:$yellow;
+    background-color:$lightyellow;
+}
+
+
+
+
+
+// 検索系パーツ
+
+#search_block{
+    width: 100%;
+    font-size:12px;
+    margin:auto;
+    padding:1% 1% 4% 1%;
+    // background-color:$transpurple;
+
+    form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    label{
+        display: inline-block;
+        margin: 20px 0px;
+        font-weight: bold;
+    }
+}
+
+#search_box{
+    width: 46%;
+}
+
+#search_text{
+    display: flex;
+    align-items:center;
+    margin-left: auto;
+    margin-right:0;
+}
+
+#search_button{
+    margin-top: 32px;
+}
+
+
+
+
+
+.search_two_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_half{
+    width: 40% !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// 入力ページのパーツ
+
+.form-group {
+    margin: 24px 0px;
+    display: flex;
+    align-items:center;
+    margin-bottom: 40px;
+    label{
+        flex-basis: 20%;
+    }
+    div{
+        position:relative;
+        span{
+        font-size: 12px;
+        position:absolute;
+        right: -60px;
+        top:12px;
+
+         }
+    }
+    
+    img{
+        width: 40px;
+        height: auto;
+    }
+
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.help-block {
+    display: block;
+    margin-top: 6px;
+    color: #737373;
+    font-size:12px;
+}
+
+
+
+.col-md-2 {
+    width: 20%;
+}
+
+.col-md-3 {
+    width: 30%;
+}
+
+.col-md-4 {
+    width: 40%;
+}
+
+.col-md-5 {
+    width: 50%;
+}
+
+.col-md-6 {
+    width: 60%;
+}
+
+.col-md-7 {
+    width: 70%;
+}
+
+.col-md-8 {
+    width: 80%;
+}
+
+.col-md-9 {
+    width: 90%;
+}
+
+
+
+
+#textarea{
+    margin-bottom: 20px;
+    height: 140px;
+
+}
+
+
+.control-label {
+    font-size: 14px;  
+}
+
+.inline-label{
+}
+
+#selectbasic{
+    display: block;
+
+}
+
+
+
+.checkbox-inline{
+    margin-right: 24px;
+    padding:14px 0px;
+    // display: flex;
+}
+
+#form-inline{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-contents{
+    label{
+        flex-basis:42%;
+        margin-right: 6px;
+        font-size: 14px;
+    }
+    
+}
+
+
+
+#detail_section{
+    box-shadow: 0px 2px 10px rgba(225, 225, 225, 0.7);
+    border-radius: 10px;
+    padding:2%;
+    margin-top:20px;
+    overflow: hidden;
+    h2{
+        padding:0 0 1% 0;
+        border-bottom:dashed $gray 1px;
+
+
+    }
+
+
+
+}
+
+
+
+
+// タブ
+
+#tabs {
+  background-color:$white;
+  margin: 0 auto;
+  margin-top:40px;
+}
+
+.tab_item {
+  width: calc(100%/5);
+  padding:10px;
+  font-size: 14px;
+  background-color:$white;
+  color:$purple;
+  text-align: center;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  // border-top-left-radius: 8px;
+  // border-top-right-radius: 8px;
+  // border-bottom-left-radius: 8px;
+  // border-bottom-right-radius: 8px;
+}
+
+input[name="tab_item"] {
+  display: none;
+}
+
+.tab_content {
+  display: none;
+  margin: 40px 20px 0;
+  clear: both;
+}
+
+#left_panel:checked ~ #left_panel_content,
+#right_panel:checked ~ #right_panel_content {
+  display: block;
+}
+
+#tabs input:checked + .tab_item {
+  background-color: $purple;
+  color: #fff;
+  box-shadow: 0px 4px 20px 10px rgba(225, 225, 225, 0.7);
+}
+
+
+
+// ボタン
+
+
+.register_btn{
+    @include btn;
+    background-color:$white;
+    padding:8px 36px;
+    color:$black;
+
+}
+
+.create_btn{
+    @include btn;
+    background-color:$white;
+    padding:8px 16px;
+    color:$black;
+
+}
+
+.update_btn{
+    @include btn;
+    background-color:$white;
+    padding:8px 36px;
+    color:$black;
+
+}
+.edit_btn{
+    @include btn;
+    background-color:$white;
+    margin-right: 14px;
+    color:$black;
+}
+
+.delete_btn{
+    @include btn;
+    background-color:$white;
+    color:$black;
+
+}
+
+.back_btn{
+    @include btn;
+    background-color:$white;
+    margin-right:10px;
+    color:$black;
+}
+
+.detail_btn{
+    @include btn;
+    background-color:$white;
+    margin-right: 14px;
+    color:$black;
+}
+
+.language_btn{
+    @include btn;
+    background-color:$dark;
+    margin: 10px 10px 10px 0px;
+
+}
+
+
+.login_btn{
+    @include btn;
+    background-color:$dark;
+    margin: 10px 10px 10px 0px;
+
+}
+
+.logout_btn{
+    @include btn;
+    background-color:$white;
+    margin: 10px 10px 10px 0px;
+    color:$black;
+
+}
+
+.send_btn{
+    @include btn;
+    background-color:$dark;
+    padding:6px 18px;
+    margin: 10px 10px 10px 0px;
+
+}
+
+.bulkdelete_btn{
+    @include btn;
+    background-color:$white;
+    padding:8px 18px;
+    color: black;
+
+}
+
+.inlinedelete_btn{
+    @include btn;
+    background-color:$red;
+
+}
+
+.add_btn{
+    @include btn;
+    background-color:$dark;
+
+}
+
+.search_btn{
+    @include btn;
+    background-color:$white;
+    color:$black;
+}
+
+.reset_btn{
+    @include btn;
+    background-color:$white;
+    color:$black;
+}
+
+
+
+// トグルスイッチ
+
+
+
+
+.toggle-switch {
+  position: relative;
+  input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+    label {
+      width: 50px;
+      height: 28px;
+      background: #ccc;
+      position: relative;
+      display: inline-block;
+      border-radius: 46px;
+      transition: 0.4s;
+      box-sizing: border-box;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        border-radius: 100%;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        background: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        transition: 0.4s;
+      }
+    }
+
+    input:checked {
+      +label{
+        background-color: #4BD865;
+        &:after{
+          left: 24px;
+        }
+      }
+    }
+
+}
+
+
+
